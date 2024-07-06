@@ -9,8 +9,6 @@ When written, the bot utilised Python's `pickle` library to store five datasets.
 
 #### Storage and Purpose
 
-// no mechanism to check reset admin command validity
-
 i. `channels.pkl` stores channel objects that are currently active in the game. The structure used is a list, and the channels are stored by their `id`. The bot uses this to avoid interrupting conversations and limit the game to dedicated channels.
 
 ii. `servers.pkl` stores a list of `guild id`s of servers that have a channel with the game active. This prevents a server from having multiple channels open with the game active.
